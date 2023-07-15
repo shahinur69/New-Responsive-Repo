@@ -206,6 +206,10 @@ form input[type="email"] {
     .container{
         padding-left: 30px;
     }
+    .vertical{
+        gap: 20px;
+        margin: 10px 0px;
+    }
     .back{
         margin-right: 30px;
         margin-left: 10px;
