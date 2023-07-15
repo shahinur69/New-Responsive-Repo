@@ -173,7 +173,6 @@ span{
     }
     .btn{
         margin: 10px 0px;
-        display: block;
     }
     
 }
@@ -201,7 +200,7 @@ span{
     }
     .btn{
         margin: 10px 40px 10px 10px;
-        display: block;
+        padding: 10px;
     }
     
 }
