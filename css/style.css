@@ -114,7 +114,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    min-height: 350px;
 }
 .card{
     height: auto;
