@@ -2,111 +2,155 @@
     padding: 0;
     margin: 0;
     font-family: "Gill Sans", sans-serif;
-    box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .hero{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/hero..JPG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #e9e9e9;
+    height: auto;
+    padding: 50px 0px;
 }
 nav{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-.logo{
-    color: white;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-span{
-    color: #f9004d;
+    justify-content: space-evenly;
 }
 nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
+    list-style: none;
 }
-nav ul li a{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
+.vertical{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
-nav ul li a:hover{
-    color: #f9004d;
-    transition: .4s;
+.logo{
+    font-size: 30px;
+}
+span{
+    color: brown;
 }
 .btn{
+    background-color: brown;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #e9e9e9;
+    border: none;
     font-size: 18px;
-    background-color: #f9004d;
-    color: white;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: transform .4s;
+    text-align: center;
 }
-.btn:hover{
-    transform: scale(1.2);
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 .content{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
+    max-width: 450px;
 }
-h1{
-    color: white;
-    margin: 20px 0 20px;
-    font-size: 75px;
+.content h1{
+    font-size: 45px;
+    margin: 20px 0px;
+}
+.content h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.content h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+.photo{
+    width: 500px;
+    height: 500px;
+}
+/*   hero    */
+.about{
+    background-color: #606060;
+    height: auto;
+    padding: 50px 0px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+.about-text{
+    max-width: 400px;
+}
+.about-text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-h3{
-    color: white;
-    margin-bottom: 50px;
-    font-size: 25px;
-}
-h4{
-    color: #fcfc;
-    font-size: 22px;
-    letter-spacing: 2px;
-}
-.newslatter form{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-.newslatter form input:first-child{
-    display: inline-block;
-    width: 100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px;
+.about-text h5{
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-.newslatter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    padding: 10px 30px;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0 0 5px #000, 0 0 15px #858585;
-    top: 6px;
-    right: 6px;
+.about-text p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.about-text img{
+    padding-right: 40px;
+}
+
+
+
+
+
+
+/*  small */
+
+@media screen and (max-width: 576px) {
+    .container, nav, .main{
+        flex-direction: column;
+    }
+    .container{
+        padding-left: 30px;
+    }
+    .back{
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+    .about-text{
+        margin: 20px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .btn{
+        margin: 10px 0px;
+    }
+    
+}
+
+/* medium  */
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .container, nav{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+    .hero{
+        padding: 30px;
+    }
+    .main{
+        padding-left: 50px;
+    }
+    .about-text{
+        margin-right: 30%;
+    }
+    .btn{
+        margin: 10px 40px 10px 10px;
+    }
+    
 }
