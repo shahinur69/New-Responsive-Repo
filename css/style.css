@@ -143,15 +143,64 @@ span{
     line-height: 28px;
     margin-bottom: 25px;
 }
+footer{
+    background-color: #191919;
+    height: auto;
+    padding: 50px 0px;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.social{
+    max-width: 450px;
+    margin-right: 50px;
+}
+.social h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
-
-
+.social p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.social i{
+    font-size: 25px;
+    margin-right: 10px;
+    border: 1px solid white;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px;
+}
+.contact h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+form input[type="email"] {
+    width: 400px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+.end{
+   width: 800px;
+   text-align: center;
+   margin-top: 50px;
+}
 
 
 /*  small */
 
 @media screen and (max-width: 576px) {
-    .container, nav, .main, .box{
+    .container, nav, .main, .box, .footer-content{
         flex-direction: column;
     }
     .container{
@@ -163,6 +212,20 @@ span{
     }
     .about-text{
         margin: 20px;
+    }
+    footer{
+        padding: 30px;
+    }
+    form input[type="email"]{
+        width: 70%;
+    }
+    .end{
+        width: 300px;
+       text-align: center;
+    }
+    .end{
+        width: 300px;
+       text-align: center;
     }
     img{
         width: 100%;
@@ -197,6 +260,19 @@ span{
     }
     .about-text{
         margin-right: 30%;
+    }
+    footer{
+        padding: 30px;
+    }
+    form input[type="email"]{
+        width: 80%;
+    }
+    .end{
+        width: 500px;
+       text-align: center;
+    }
+    .social{
+        margin: 20px;
     }
     .btn{
         margin: 10px 40px 10px 10px;
